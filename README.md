@@ -26,6 +26,6 @@ I went through tutorials on **Bootstrap** from *Code with Harry*, which helped m
 This project taught me how to **leverage Bootstrap components** to build a responsive and visually appealing website without writing extensive CSS. I learned how to combine grids, cards, and navigation elements effectively while maintaining a clean layout. The process also improved my problem-solving skills when dealing with layout and alignment issues.
 
 ### 6. Time Taken
-The project was completed over approximately **15–20 hours**, including learning, implementation, debugging, and final touches.
+The project was completed over approximately **3-4 hours**, including learning, implementation, debugging, and final touches.
 
 **Overall**, this project enhanced my understanding of **front-end development, responsive design, and UX/UI principles**, and strengthened my practical skills in using Bootstrap.
