@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="30" height="30" class="me-3">
+            </a>
+            <a class="navbar-brand" href="#">CYBRAXIS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"> <a class="nav-link " aria-current="page" href="index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Analyst</a></li>
+                            <li><a class="dropdown-item" href="#">Penetration Tester</a></li>
+                            <li><a class="dropdown-item" href="#">Red Team</a></li>
+                            <li><a class="dropdown-item" href="#">Blue Team</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link active" href="#">Contact Info</a> </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--contact info-->
+    <main class="container-fluid min-vh-100 bg-dark bg-opacity-75 text-light pt-5">
+
+        <div class="row justify-content-center g-4 mt-5">
+
+            <!-- Contact Form Column -->
+            <div class="col-lg-6">
+
+                <div class="card bg-dark bg-opacity-75 text-light shadow-lg h-100">
+
+                    <!-- Logo -->
+                    <div class="d-flex justify-content-center mt-n4">
+                        <div class="bg-dark bg-opacity-75 text-primary rounded-circle 
+                      d-flex align-items-center justify-content-center" style="width:90px; height:90px;">
+                            <i class="fa-solid fa-shield-halved fs-2"></i>
+                        </div>
+                    </div>
+
+                    <div class="card-body p-4 text-center">
+                        <h4 class="card-title text-primary mb-2">Contact CYBRAXIS</h4>
+                        <p class="text-secondary mb-4">
+                            Secure communication starts here.
+                        </p>
+
+                        <form>
+
+                            <!-- Name -->
+                            <div class="mb-3 text-start">
+                                <label class="form-label">Full Name</label>
+                                <input type="text"
+                                    class="form-control bg-dark bg-opacity-75 text-light border border-secondary placeholder-white"
+                                    placeholder="Enter your name">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3 text-start">
+                                <label class="form-label">Email Address</label>
+                                <input type="email"
+                                    class="form-control bg-dark bg-opacity-75 text-light border border-secondary placeholder-white"
+                                    placeholder="name@example.com">
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-3 text-start">
+                                <label class="form-label">Message</label>
+                                <textarea
+                                    class="form-control bg-dark bg-opacity-75 text-light border border-secondary placeholder-white"
+                                    rows="4" placeholder="Describe your query..."></textarea>
+                            </div>
+
+                            <br>
+                            <!-- Submit -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-outline-primary">
+                                    <i class="fa-solid fa-paper-plane me-2"></i>Send Secure Message
+                                </button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Sidebar Column -->
+            <div class="col-lg-4 d-flex">
+  <div class="card bg-dark bg-opacity-75 text-light shadow-lg p-3 flex-fill">
+
+    <!-- Section 1: Cybersecurity Tips -->
+    <h5 class="text-primary mb-3">Cybersecurity Tips</h5>
+    <ul class="list-unstyled">
+      <li class="mb-2"><i class="fa-solid fa-shield-check me-2 text-primary"></i>Use strong, unique passwords.</li>
+      <li class="mb-2"><i class="fa-solid fa-lock me-2 text-primary"></i>Enable two-factor authentication.</li>
+      <li class="mb-2"><i class="fa-solid fa-cloud-arrow-up me-2 text-primary"></i>Backup your data regularly.</li>
+      <li class="mb-2"><i class="fa-solid fa-bug me-2 text-primary"></i>Keep software and antivirus updated.</li>
+      <li class="mb-2"><i class="fa-solid fa-user-secret me-2 text-primary"></i>Be cautious with emails and links.</li>
+    </ul>
+
+    <hr class="border-secondary">
+
+    <!-- Section 2: Common Threats -->
+    <h5 class="text-primary mb-3">Common Threats</h5>
+    <ul class="list-unstyled">
+      <li class="mb-2"><i class="fa-solid fa-virus me-2 text-primary"></i>Phishing attacks</li>
+      <li class="mb-2"><i class="fa-solid fa-skull-crossbones me-2 text-primary"></i>Malware & Ransomware</li>
+      <li class="mb-2"><i class="fa-solid fa-network-wired me-2 text-primary"></i>Network intrusions</li>
+      <li class="mb-2"><i class="fa-solid fa-user-ninja me-2 text-primary"></i>Social engineering</li>
+    </ul>
+
+    <hr class="border-secondary">
+
+    <!-- Section 4: Useful Resources -->
+    <h5 class="text-primary mb-3">Resources & Tools</h5>
+    <ul class="list-unstyled">
+      <li class="mb-2"><i class="fa-solid fa-book me-2 text-primary"></i>Cybersecurity blogs</li>
+      <li class="mb-2"><i class="fa-solid fa-laptop-code me-2 text-primary"></i>Security tools & scanners</li>
+      <li class="mb-2"><i class="fa-solid fa-video me-2 text-primary"></i>Video tutorials</li>
+      <li class="mb-2"><i class="fa-solid fa-globe me-2 text-primary"></i>Official security advisories</li>
+    </ul>
+
+  </div>
+</div>
+
+        </div>
+        <br>
+        <br>
+
+        <!-- Info Cards Section -->
+        <!-- Info Cards Section -->
+        <section class="bg-dark bg-opacity-75 py-5">
+            <div class="container">
+                <div class="row justify-content-center g-4">
+
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-light border border-primary h-100 text-center p-3 shadow">
+                            <i class="fa-solid fa-lock fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title text-primary">Secure</h5>
+                            <p class="card-text">All your messages are encrypted for maximum privacy.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-light border border-primary h-100 text-center p-3 shadow">
+                            <i class="fa-solid fa-headset fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title text-primary">Support</h5>
+                            <p class="card-text">Our team is available 24/7 to assist you with any query.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-light border border-primary h-100 text-center p-3 shadow">
+                            <i class="fa-solid fa-rocket fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title text-primary">Fast</h5>
+                            <p class="card-text">Quick responses and efficient solutions guaranteed.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+
+    </main>
+
+
+    <!--footer-->
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- Sections -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Resources</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Threat Reports</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Tools</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Solutions</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Network Security</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Cloud Security</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Endpoint Protection</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Incident Response</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Company</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Careers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form class="text-center text-md-start">
+                        <h5>Subscribe to Cybersecurity Updates</h5>
+                        <p>Get monthly insights, tips, and alerts straight to your inbox.</p>
+                        <div
+                            class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-center justify-content-md-start">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+
+            <div
+                class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-3 border-top border-secondary">
+
+                <!-- Copyright -->
+                <p class="m-0 text-center w-100 lh-sm">
+                    © 2025 CyberSecure Inc. All rights reserved.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="d-flex gap-3 mt-2 mt-sm-0">
+                    <i class="fa-brands fa-square-linkedin fs-4"></i>
+                    <i class="fa-brands fa-instagram fs-4"></i>
+                    <i class="fa-brands fa-facebook fs-4"></i>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

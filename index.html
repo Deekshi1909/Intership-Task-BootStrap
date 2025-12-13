@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="30" height="30" class="me-3">
+            </a>
+            <a class="navbar-brand" href="#">CYBRAXIS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Analyst</a></li>
+                            <li><a class="dropdown-item" href="#">Penetration Tester</a></li>
+                            <li><a class="dropdown-item" href="#">Red Team</a></li>
+                            <li><a class="dropdown-item" href="#">Blue Team</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="contact.html">Contact Info</a> </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Login Modal -->
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="loginModalLabel">Login to CYBRAXIS</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email"
+                                class="form-control bg-dark text-light border border-secondary placeholder-white"
+                                id="loginEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password"
+                                class="form-control bg-dark text-light border border-secondary placeholder-white"
+                                id="loginPassword" placeholder="Enter password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <p class="mt-3 text-center text-secondary">
+                        Don't have an account?
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign
+                            Up</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- signup Modal -->
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-light">
+
+                <div class="modal-header border-bottom border-secondary">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up for CYBRAXIS</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="signupName" class="form-label">Full Name</label>
+                            <input type="text"
+                                class="form-control bg-dark text-light border border-secondary placeholder-white"
+                                id="signupName" placeholder="Enter full name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email"
+                                class="form-control bg-dark text-light border border-secondary placeholder-white"
+                                id="signupEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password"
+                                class="form-control bg-dark text-light border border-secondary placeholder-white"
+                                id="signupPassword" placeholder="Enter password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password"
+                                class="form-control bg-dark text-light border border-secondary placeholder-white"
+                                id="signupConfirmPassword" placeholder="Confirm password">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </form>
+                    <p class="mt-3 text-center text-secondary">
+                        Already have an account?
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                            data-bs-dismiss="modal">Login</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- carousel for slide slider-->
+
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="ratio ratio-21x9">
+                    <img src="img1.jpg" class="w-100 h-100 object-fit-cover" alt="">
+                </div>
+                <div class="carousel-caption d-none d-md-block bottom-0">
+                    <h1>Protect Your Data</h1>
+                    <p>Learn how to safeguard sensitive information from hackers and cyber attacks.</p>
+                    <button type="button" class="btn btn-success">Start Learning</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="img2.jpg" class="w-100 h-100 object-fit-cover" alt="">
+                </div>
+                <div class="carousel-caption d-none d-md-block bottom-0">
+                    <h1>Secure Networks</h1>
+                    <p>Understand how firewalls, VPNs, and encryption keep your network safe.</p>
+                    <button type="button" class="btn btn-success">Start Learning</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="img3.jpg" class="w-100 h-100 object-fit-cover" alt="">
+                </div>
+                <div class="carousel-caption d-none d-md-block bottom-0">
+                    <h1>Stay Cyber Aware</h1>
+                    <p>Tips and best practices to recognize phishing attacks and online scams.</p>
+                    <button type="button" class="btn btn-success">Start Learning</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- articles or cards of the website-->
+    <div class="container my-4">
+        <div class="row justify-content-center">
+
+            <!-- Article 1 -->
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger-emphasis">Awareness</strong>
+                        <h3 class="mb-0">Top Online Scams in India</h3>
+                        <div class="mb-1 text-body-secondary">Updated 2025</div>
+                        <p class="card-text mb-auto">
+                            Learn how phishing emails, fake OTP calls, and QR scams are targeting users daily.
+                        </p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" src="a1.jpg" width="200" height="200">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Career</strong>
+                        <h3 class="mb-0">Cybersecurity Roadmap</h3>
+                        <div class="mb-1 text-body-secondary">For Beginners</div>
+                        <p class="card-text mb-auto">
+                            A complete guide to start a career in cybersecurity from zero knowledge.
+                        </p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" src="a2.jpg" width="200" height="200">
+                    </div>
+                </div>
+            </div>
+            <!--Article 3-->
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">Learning</strong>
+                        <h3 class="mb-0">Red Team vs Blue Team</h3>
+                        <div class="mb-1 text-body-secondary">Roles Explained</div>
+                        <p class="card-text mb-auto">
+                            Understand offensive vs defensive security roles and required skill sets.
+                        </p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" src="a3.jpg" width="200" height="200">
+                    </div>
+                </div>
+            </div>
+            <!--Article 4-->
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning-emphasis">Tips</strong>
+                        <h3 class="mb-0">Password Security Mistakes</h3>
+                        <div class="mb-1 text-body-secondary">Must Read</div>
+                        <p class="card-text mb-auto">
+                            Avoid common password mistakes that hackers exploit to breach accounts.
+                        </p>
+
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" src="a4.jpg" width="200" height="200">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- Sections -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Resources</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Threat Reports</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Tools</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Solutions</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Network Security</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Cloud Security</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Endpoint Protection</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Incident Response</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Company</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Careers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form class="text-center text-md-start">
+                        <h5>Subscribe to Cybersecurity Updates</h5>
+                        <p>Get monthly insights, tips, and alerts straight to your inbox.</p>
+                        <div
+                            class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-center justify-content-md-start">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+
+            <div
+                class="d-flex flex-column flex-sm-row justify-content-center align-items-center py-3 border-top border-secondary">
+
+                <!-- Copyright -->
+                <p class="m-0 text-center w-100 lh-sm">
+                    © 2025 CyberSecure Inc. All rights reserved.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="d-flex gap-3 mt-2 mt-sm-0">
+                    <i class="fa-brands fa-square-linkedin fs-4"></i>
+                    <i class="fa-brands fa-instagram fs-4"></i>
+                    <i class="fa-brands fa-facebook fs-4"></i>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
