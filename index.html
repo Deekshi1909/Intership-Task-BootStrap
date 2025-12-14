@@ -10,6 +10,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+            /* Mobile-only adjustments */
+            @media (max-width: 767.98px) {
+        
+                /* smaller than md */
+                #carouselExampleRide .carousel-item .ratio {
+                    height: 50vh;
+                    /* taller carousel on mobile */
+                }
+        
+                #carouselExampleRide .carousel-item img {
+                    height: 100%;
+                    object-fit: cover;
+                    /* keeps image proportion while filling the container */
+                }
+        
+                /* Optional: move captions closer to bottom on mobile */
+                #carouselExampleRide .carousel-caption.d-block {
+                    bottom: 5%;
+                }
+            }
+        </style>
 </head>
 
 <body>
